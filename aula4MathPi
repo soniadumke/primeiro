@@ -1,0 +1,56 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO/8TIhuevmUfqSJ8uf3Y+7",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/soniadumke/primeiro/blob/main/aula4MathPi\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 6,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4BcmwcMLpJJw",
+        "outputId": "dcb9ee08-c519-4b41-bc79-ed858dff4cdd"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "o valor de pi é: 3.1416.\n"
+          ]
+        }
+      ],
+      "source": [
+        "#strings formatadas use 'f' antas da msg\n",
+        "import math\n",
+        "#uso de {} no local do valor\n",
+        "print(f'o valor de pi é: {math.pi:.4f}.')"
+      ]
+    }
+  ]
+}
