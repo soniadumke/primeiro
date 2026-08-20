@@ -1,0 +1,62 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMiOtuB0eSaaKOxDCAupnjZ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/soniadumke/primeiro/blob/main/Aula4Return\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cFeJ5eYDnrhK",
+        "outputId": "c17ff094-a4c0-4313-bea0-532985a41931"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "20% de 300 são:      60.00\n",
+            "100% de 50 são:      50.00\n"
+          ]
+        }
+      ],
+      "source": [
+        "#usamos o return para retornar valores de uma func e encerrar sua execucao\n",
+        "# funcao para calcular percentual de um valor qualquer\n",
+        "# e possivel deixar um valor fixo para um argumento, quando ele nao e informado\n",
+        "# na chamada o valor padrao e utilizado\n",
+        "def calcula_percento(valor,percentual=100):\n",
+        "  quanto = valor * percentual / 100\n",
+        "  return quanto\n",
+        "print ('20% de 300 são: {:10.2f}' .format (calcula_percento (300,20)))\n",
+        "print ('100% de 50 são: {:10.2f}' .format (calcula_percento (50)))"
+      ]
+    }
+  ]
+}
