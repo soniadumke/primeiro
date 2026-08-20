@@ -1,0 +1,59 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPQQ0OIOXrJYqRBAmChisn5",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/soniadumke/primeiro/blob/main/aula4FuncoesComArgumentos\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "n5C5Qnqbk7fr",
+        "outputId": "7ab8b085-de96-4af6-edc2-6d0f04145f5c"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Maior: 120\n"
+          ]
+        }
+      ],
+      "source": [
+        "#criar uma func que mostra o maior de dois numeos\n",
+        "def maior (a, b):\n",
+        "  if a> b:\n",
+        "    print('Maior: {}' .format(a))\n",
+        "  else:\n",
+        "    print('Maior: {}' .format(b))\n",
+        "maior (120, 35)"
+      ]
+    }
+  ]
+}
