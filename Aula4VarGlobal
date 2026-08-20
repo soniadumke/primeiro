@@ -1,0 +1,58 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPLFdlgnkdjo7cmh1H6ULCa",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/soniadumke/primeiro/blob/main/Aula4VarGlobal\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GJUqmEGlmY_i",
+        "outputId": "139af032-b5ad-443f-fa50-45c7acdc127f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n"
+          ]
+        }
+      ],
+      "source": [
+        "#no programa principal a var e o acesso global e pode ser acessada\n",
+        "# a qualquer momento do programa\n",
+        "global acesso\n",
+        "#atribuicao de valores deve ser feita depois de declarar como global\n",
+        "acesso = True\n",
+        "print (acesso)"
+      ]
+    }
+  ]
+}
