@@ -1,0 +1,105 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPfFPzQ4ujlKR3ofXk4+M1W",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/soniadumke/primeiro/blob/main/Aula4AtividadeEntregaPrimosERaizQuadrada\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "S5fpgj5T1J0a"
+      },
+      "outputs": [],
+      "source": [
+        "#trabalho de entrega\n",
+        "#parte 1 primos\n",
+        "\n",
+        "numero = int(input(\"Digite um número: \"))\n",
+        "\n",
+        "if numero == 0 or numero == 1:\n",
+        "    print(\"O número não é primo.\")\n",
+        "\n",
+        "elif numero == 2:\n",
+        "    print(\"O número é primo.\")\n",
+        "\n",
+        "elif numero % 2 == 0:\n",
+        "    print(\"O número não é primo.\")\n",
+        "\n",
+        "else:\n",
+        "    primo = True\n",
+        "\n",
+        "    divisor = 3\n",
+        "\n",
+        "    while divisor <= numero:\n",
+        "        if numero % divisor == 0:\n",
+        "            primo = False\n",
+        "            break\n",
+        "\n",
+        "        divisor = divisor + 2\n",
+        "\n",
+        "    if primo:\n",
+        "        print(\"O número é primo.\")\n",
+        "    else:\n",
+        "        print(\"O número não é primo.\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#parte 2\n",
+        "# raiz quadrada\n",
+        "\n",
+        "import math\n",
+        "\n",
+        "n = float(input(\"Digite um número: \"))\n",
+        "\n",
+        "b = n\n",
+        "\n",
+        "p = (b + (n / b)) / 2\n",
+        "\n",
+        "quadrado = p ** 2\n",
+        "\n",
+        "while abs(n - quadrado) >= 0.0001:\n",
+        "    b = p\n",
+        "\n",
+        "    p = (b + (n / b)) / 2\n",
+        "\n",
+        "    quadrado = p ** 2\n",
+        "\n",
+        "print(\"Raiz pelo método de Newton:\", p)\n",
+        "\n",
+        "raiz = math.sqrt(n)\n",
+        "\n",
+        "print(\"Raiz usando SQRT:\", raiz)"
+      ],
+      "metadata": {
+        "id": "K_uFAvF81fP4"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
